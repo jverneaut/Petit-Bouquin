@@ -1,0 +1,9 @@
+.articles-container {
+  margin: 0 32px;
+  margin-top: -32px;
+  
+  @media screen and (max-width: 640px) {
+    margin: 0;
+    margin-top: -32px;
+  }
+}

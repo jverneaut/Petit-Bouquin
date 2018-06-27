@@ -1,0 +1,19 @@
+.nav {
+  margin: 0;
+  &__item {
+    display: inline;
+    margin-left: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  &__link {
+    color: $dark-color;
+    text-decoration: none;
+
+    &::after {
+      display: none;
+    }
+  }
+}

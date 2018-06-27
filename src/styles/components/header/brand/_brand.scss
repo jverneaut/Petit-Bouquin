@@ -1,0 +1,15 @@
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $dark-color;
+  
+  &__logo {
+    height: 1.2em;
+  }
+  
+  &__name {
+    font-size: 1.2em;
+    margin-left: 16px;
+  }
+}
