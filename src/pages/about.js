@@ -5,7 +5,7 @@ const About = () => (
     <h1>A propos de ce site</h1>
     <p>
       Je m&#39;appelle Julien Verneaut et je suis le créateur de ce site.
-      Un de mes rêves, c&#39;est de pouvoir rendre la connaissance accessible
+      Un de mes rêves, c&#39;est de rendre la connaissance accessible
       au plus grand monde.
     </p>
     <p>
@@ -13,8 +13,8 @@ const About = () => (
       que je découvre au fil de mes lectures.
     </p>
     <p>
-      J&#39;y publie régulièrement des résumés complets de livres qui m&#39;ont particulèrement
-      plu. Si vous souhaitez voir votre livre préféré sur ce site,
+      J&#39;y publie régulièrement des résumés complets de livres que j&39;ai
+      particulièrement appreciés. Si vous souhaitez voir votre livre préféré sur ce site,
       vous pouvez m&#39;en faire la suggestion en commentaire.
     </p>
     <p>
