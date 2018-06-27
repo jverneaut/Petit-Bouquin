@@ -4,41 +4,31 @@ const About = () => (
   <div className="article-container">
     <h1>A propos de ce site</h1>
     <p>
-      Mon rêve, c&#39;est de rendre la connaissance accessible au plus grand nombre.
-      Avec internet, il est possible d&#39;explorer et d&#39;apprendre une grande partie de choses.
-    </p>
-    <p>
-      Mon rêve, c&#39;est de rendre la connaissance accessible au plus grand nombre.
-      Avec internet, il est possible d&#39;explorer et d&#39;apprendre une grande partie de choses.
-      Si j&#39;ai pu créer ce site, c&#39;est grâce aux cours de
-      programmation que j&#39;ai trouvé en ligne.
-    </p>
-    <p>
-      En créant ce site, je souhaite à mon tour apporter ma pière
-      à l&#39;édifice. Je veux partager avec vous des idées,
-      un rêve, peut-être une pasion.
-    </p>
-    <p>
-      Si vous souhaitez voir ce projet perdurer, vous pouvez utiliser
-      les liens présent dans les articles pour acheter les livres dont je parle.
-      Pour vous le prix reste le même et je touche une petite commission.
-    </p>
-    <p>
-      Si vous souhaitez me contacter pour discuter ou travailler avec moi,
-      vous pouvez me joindre via mon site internet et mon LinkedIn.
-    </p>
-    <p>
       Je m&#39;appelle Julien Verneaut et je suis le créateur de ce site.
-      Afin de partager la connaissance avec le plus grand nombre,
-      je publie régulièrement sur ce site le résumé de mes dernières lectures.
+      Un de mes rêves, c&#39;est de pouvoir rendre la connaissance accessible
+      au plus grand monde.
+    </p>
+    <p>
+      En créant ce site, je veux partager avec vous les idées, concepts et inspirations
+      que je découvre au fil de mes lectures.
+    </p>
+    <p>
+      J&#39;y publie régulièrement des résumés complets de livres qui m&#39;ont particulèrement
+      plu. Si vous souhaitez voir votre livre préféré sur ce site,
+      vous pouvez m&#39;en faire la suggestion en commentaire.
+    </p>
+    <p>
+      Pour rester informé des dernières nouveautés sur ce site, vous pouvez également vous inscrire
+      à <a href="http://eepurl.com/dznDKD">la newsletter Petit Bouquin</a>.
     </p>
     <hr />
     <p>
-      Ce site est développé en React avec le framework Gatsby. <br />
-      Son code source est accessible librement sur mon Github.
+      Ce site est développé en <a href="https://reactjs.org/">React</a> avec le framework <a href="https://www.gatsbyjs.org/">Gatsby</a>.<br />
+      Son code source est accessible librement <a href="https://github.com/jverneaut/Petit-Bouquin">sur mon Github</a>.
     </p>
-    <p>Vous avez un projet de développement et souhaitez travailler avec moi ?
-      Vous pouvez me contacter via mon Linkedin.
+    <p>
+      Vous souhaitez discuter ou travailler avec moi ?
+      Vous pouvez me contacter via <a href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">mon Linkedin</a>.
     </p>
   </div>
 );
