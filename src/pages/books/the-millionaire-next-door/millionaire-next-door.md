@@ -10,7 +10,7 @@ language: 'Anglais'
 year: '1996'
 ---
 
-Qui sont les millionaire ? Quel est leur mode de vie ? Quelles sont leurs habitudes de consommation ?
+Qui sont les millionaires ? Quel est leur mode de vie ? Quelles sont leurs habitudes de consommation ?
 
 C'est pour répondre à ces questions que The Millionaire Next Door a été écrit. Compte rendu d'une étude réalisée dans les années 90 sur plusieurs milliers de millionaires — les fameux 1% dont on parle souvent, ce livre intriguant, provocateur et parfois très drôle nous permet de nous glisser dans la peau d'un millionaire le temps de quelques pages.
 
