@@ -32,7 +32,7 @@ const About = () => (
     </p>
     <hr />
     <p>
-      Ce site est développé en <a href="https://reactjs.org/">React</a> avec le framework <a href="https://www.gatsbyjs.org/">Gatsby</a>.<br />
+      Ce site est développé en <a href="https://reactjs.org/">React</a> avec le framework <a href="https://www.gatsbyjs.com/">Gatsby</a>.<br />
       Son code source est accessible librement <a href="https://github.com/jverneaut/Petit-Bouquin">sur mon Github</a>.
     </p>
     <p>
