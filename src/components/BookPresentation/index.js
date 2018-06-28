@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 const BookPresentation = (props) => {
   const {
-    title, cover, link, language, author, year, categories,
+    title, coverSrc, coverSrcSet, link, language, author, year, categories,
   } = props;
   return (
     <div className="book-presentation">
@@ -20,7 +20,7 @@ const BookPresentation = (props) => {
       <div className="book-presentation__group">
 
         <a href={link} className="book-presentation__img-wrapper">
-          <img src={cover} className="book-presentation__cover" alt="" />
+          <img src={coverSrc} srcSet={coverSrcSet} className="book-presentation__cover" alt="" />
         </a>
 
         <div className="book-presentation__informations">

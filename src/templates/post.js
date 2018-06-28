@@ -28,7 +28,8 @@ export default function Template({ data }) {
       </Helmet>
       <BookPresentation
         title={post.frontmatter.title}
-        cover={post.frontmatter.cover.childImageSharp.resolutions.src}
+        coverSrc={post.frontmatter.cover.childImageSharp.resolutions.src}
+        coverSrcSet={post.frontmatter.cover.childImageSharp.resolutions.srcSet}
         link={post.frontmatter.link}
         language={post.frontmatter.language}
         author={post.frontmatter.author}
@@ -78,7 +79,7 @@ export const query = graphql`
         categories
         cover {
           childImageSharp {
-            resolutions(width: 400) {
+            resolutions(width: 140) {
               width
               height
               src
