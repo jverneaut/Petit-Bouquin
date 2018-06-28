@@ -14,7 +14,7 @@ const About = () => (
     </p>
     <p>
       J&#39;y publie régulièrement des résumés complets de livres que j&#39;ai
-      particulièrement appreciés. Si vous souhaitez voir votre livre préféré sur ce site,
+      particulièrement appréciés. Si vous souhaitez voir votre livre préféré sur ce site,
       vous pouvez m&#39;en faire la suggestion en commentaire.
     </p>
     <p>
