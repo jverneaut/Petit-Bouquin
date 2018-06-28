@@ -21,10 +21,10 @@ export default function Template({ data }) {
     <div className="article-container">
       <Helmet
         meta={[
-          { name: 'description', content: `Résumé de ${post.frontmatter.title} — ${post.frontmatter.excerpt}` },
+          { name: 'description', content: `Résumé complet de ${post.frontmatter.title} — ${post.excerpt}` },
         ]}
       >
-        <title>{post.frontmatter.title} | Petit Bouquin</title>
+        <title>Résumé complet de {post.frontmatter.title} | Petit Bouquin</title>
       </Helmet>
       <BookPresentation
         title={post.frontmatter.title}
