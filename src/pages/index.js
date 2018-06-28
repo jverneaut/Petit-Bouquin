@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import PropTypes, { arrayOf, shape } from 'prop-types';
 
 import Article from '../components/Article';
@@ -8,6 +9,14 @@ const IndexPage = ({ data }) => {
   const { edges: books } = data.allMarkdownRemark;
   return (
     <div className="articles-container">
+      <Helmet
+        meta={[
+          {
+            name: 'description',
+            content: 'Petit Bouquin vous offre régulièrement des résumés complets de livres pour vous donner envie de lire et vous inspirer.',
+          },
+        ]}
+      />
       {books.map((book, index) => {
         const {
           title, path, categories, cover,

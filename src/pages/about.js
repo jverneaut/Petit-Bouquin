@@ -1,7 +1,16 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const About = () => (
   <div className="article-container">
+    <Helmet
+      meta={[
+        {
+          name: 'description',
+          content: 'Je m\'appelle Julien Verneaut et je suis le créateur de ce site. Un de mes rêves, c\'est de rendre la connaissance accessible au plus grand monde. En créant ce site, je veux partager avec vous les idées, concepts et inspirations que je découvre au fil de mes lectures.',
+        },
+      ]}
+    />
     <h1>A propos de ce site</h1>
     <p>
       Je m&#39;appelle Julien Verneaut et je suis le créateur de ce site.

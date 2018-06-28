@@ -19,7 +19,11 @@ export default function Template({ data }) {
 
   return (
     <div className="article-container">
-      <Helmet>
+      <Helmet
+        meta={[
+          { name: 'description', content: `Résumé de ${post.frontmatter.title} — ${post.frontmatter.excerpt}` },
+        ]}
+      >
         <title>{post.frontmatter.title} | Petit Bouquin</title>
       </Helmet>
       <BookPresentation
@@ -62,6 +66,7 @@ export const query = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt
       frontmatter {
         path
         title
