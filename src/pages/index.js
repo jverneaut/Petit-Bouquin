@@ -16,7 +16,9 @@ const IndexPage = ({ data }) => {
             content: 'Petit Bouquin vous offre régulièrement des résumés complets de livres pour vous donner envie de lire et vous inspirer.',
           },
         ]}
-      />
+      >
+        <title>Petit Bouquin | Des résumés complets de livres pour vous inspirer</title>
+      </Helmet>
       {books.map((book, index) => {
         const {
           title, path, categories, cover,

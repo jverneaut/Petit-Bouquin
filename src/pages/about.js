@@ -10,7 +10,9 @@ const About = () => (
           content: 'Je m\'appelle Julien Verneaut et je suis le créateur de ce site. Un de mes rêves, c\'est de rendre la connaissance accessible au plus grand monde. En créant ce site, je veux partager avec vous les idées, concepts et inspirations que je découvre au fil de mes lectures.',
         },
       ]}
-    />
+    >
+      <title>A propos de ce site | Petit Bouquin</title>
+    </Helmet>
     <h1>A propos de ce site</h1>
     <p>
       Je m&#39;appelle Julien Verneaut et je suis le créateur de ce site.

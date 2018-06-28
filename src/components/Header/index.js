@@ -7,7 +7,6 @@ import Nav from './Nav';
 const Header = () => (
   <div className="header">
     <Helmet>
-      <title>Petit Bouquin</title>
       <meta name="theme-color" content="#2f2f36" />
     </Helmet>
     <Brand />
