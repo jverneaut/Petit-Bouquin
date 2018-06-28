@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Petit Bouquin',
+    siteUrl: 'https://www.petitbouquin.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -54,6 +55,27 @@ module.exports = {
           yandex: false,
           windows: false,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/categories/*'],
+        query: `{
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+        }`,
       },
     },
     'gatsby-plugin-netlify',
