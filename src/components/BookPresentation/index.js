@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import PropTypes, { arrayOf } from 'prop-types';
 
 const BookPresentation = (props) => {
   const {
-    title, coverSrc, coverSrcSet, link, language, author, year, categories,
+    title, cover, link, language, author, year, categories,
   } = props;
   return (
     <div className="book-presentation">
@@ -20,9 +21,8 @@ const BookPresentation = (props) => {
       <div className="book-presentation__group">
 
         <a href={link} className="book-presentation__img-wrapper">
-          <img src={coverSrc} srcSet={coverSrcSet} className="book-presentation__cover" alt="" />
+          <img src={cover} className="book-presentation__cover" alt="" />
         </a>
-
         <div className="book-presentation__informations">
           <ul className="book-presentation__informations-list">
             <li className="book-presentation__information">Auteur : <em>{author}</em></li>
@@ -37,6 +37,16 @@ const BookPresentation = (props) => {
       </div>
     </div>
   );
+};
+
+BookPresentation.propTypes = {
+  title: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+  categories: arrayOf(PropTypes.string).isRequired,
 };
 
 export default BookPresentation;

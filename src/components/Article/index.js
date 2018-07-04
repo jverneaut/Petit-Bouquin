@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import PropTypes, { arrayOf } from 'prop-types';
 
 const Article = (props) => {
   const {
-    title, excerpt, categories, first, path, cover,
+    title, excerpt, categories, first, path,
   } = props;
-  // TODO: Add cover image
   return (
     <div className={`article ${first ? 'article--first' : ''}`}>
       {first &&
@@ -27,6 +27,14 @@ const Article = (props) => {
       </ul>
     </div>
   );
+};
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  categories: arrayOf(PropTypes.string).isRequired,
+  first: PropTypes.bool.isRequired,
+  path: PropTypes.string.isRequired,
 };
 
 export default Article;

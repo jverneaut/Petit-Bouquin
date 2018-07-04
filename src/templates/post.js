@@ -28,8 +28,7 @@ export default function Template({ data }) {
       </Helmet>
       <BookPresentation
         title={post.frontmatter.title}
-        coverSrc={post.frontmatter.cover.childImageSharp.resolutions.src}
-        coverSrcSet={post.frontmatter.cover.childImageSharp.resolutions.srcSet}
+        cover={post.frontmatter.cover}
         link={post.frontmatter.link}
         language={post.frontmatter.language}
         author={post.frontmatter.author}
@@ -48,17 +47,22 @@ Template.propTypes = {
     allMarkdownRemark: shape({
       edges: arrayOf(shape({
         node: shape({
-          excerpt: PropTypes.string,
+          excerpt: PropTypes.string.isRequired,
           frontmatter: shape({
-            categories: arrayOf(PropTypes.string),
-            date: PropTypes.string,
-            path: PropTypes.string,
-            title: PropTypes.string,
+            categories: arrayOf(PropTypes.string).isRequired,
+            date: PropTypes.string.isRequired,
+            path: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired,
+            author: PropTypes.string.isRequired,
+            year: PropTypes.string.isRequired,
+            language: PropTypes.string.isRequired,
+            cover: PropTypes.string.isRequired,
           }),
-          html: PropTypes.string,
-        }),
-      })),
-    }),
+          html: PropTypes.string.isRequired,
+        }).isRequired,
+      })).isRequired,
+    }).isRequired,
   }).isRequired,
 };
 
@@ -77,16 +81,7 @@ export const query = graphql`
         year
         language
         categories
-        cover {
-          childImageSharp {
-            resolutions(width: 140) {
-              width
-              height
-              src
-              srcSet
-            }
-          }
-        }
+        cover
       }
     }
   }

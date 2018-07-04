@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
       </Helmet>
       {books.map((book, index) => {
         const {
-          title, path, categories, cover,
+          title, path, categories,
         } = book.node.frontmatter;
         const { excerpt } = book.node;
         const first = index === 0;
@@ -33,7 +33,6 @@ const IndexPage = ({ data }) => {
             title={title}
             categories={categories}
             first={first}
-            cover={cover.childImageSharp.resolutions.src}
           />
         );
       })}
@@ -50,14 +49,6 @@ IndexPage.propTypes = {
           excerpt: PropTypes.string,
           frontmatter: shape({
             categories: arrayOf(PropTypes.string),
-            cover: shape({
-              childImageSharp: shape({
-                height: PropTypes.number,
-                src: PropTypes.string,
-                srcSet: PropTypes.string,
-                width: PropTypes.number,
-              }),
-            }),
             date: PropTypes.string,
             path: PropTypes.string,
             title: PropTypes.string,
@@ -86,16 +77,6 @@ export const query = graphql`
             path
             categories
             date(formatString: "DD MMMM, YYYY")
-            cover {
-              childImageSharp {
-                resolutions(width: 400) {
-                  width
-                  height
-                  src
-                  srcSet
-                }
-              }
-            }
           }
         }
       }
