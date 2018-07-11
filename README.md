@@ -9,6 +9,7 @@ npm install --global gatsby-cli
 
 Clonez ce projet puis lancez-le avec :
 ```sh
+git clone https://github.com/jverneaut/petit-bouquin
 cd petit-bouquin
 gatsby develop
 ```
