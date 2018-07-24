@@ -15,7 +15,7 @@ const About = () => (
     </Helmet>
     <h1>A propos de ce site</h1>
     <p>
-      Je m&#39;appelle Julien Verneaut et je suis le créateur de ce site.
+      Je m&#39;appelle <a href="https://www.julienverneaut.com">Julien Verneaut</a> et je suis le créateur de ce site.
       Un de mes rêves, c&#39;est de rendre la connaissance accessible
       au plus grand monde.
     </p>
