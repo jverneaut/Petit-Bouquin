@@ -10,7 +10,7 @@ const Header = () => (
       <meta name="theme-color" content="#2f2f36" />
     </Helmet>
     <Brand />
-    <Nav />
+    {/* <Nav /> */}
   </div>
 );
 

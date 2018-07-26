@@ -1,1 +1,9 @@
 @import "base/reset";
+@import "components/hero";
+@import "components/article";
+@import "components/header";
+
+body {
+  // font-family: Amiri;
+  font-family: Source Serif Pro;
+}

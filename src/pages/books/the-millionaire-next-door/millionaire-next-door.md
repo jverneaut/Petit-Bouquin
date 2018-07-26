@@ -5,6 +5,7 @@ categories: ['finance', 'sociologie']
 date: '2018-06-24'
 link: 'https://amzn.to/2lAjhtj'
 cover: 'https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=1589795474&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=petitbouquin-21'
+featured: 'https://source.unsplash.com/PyFzygP2eNg/1600x900'
 author: 'Thomas J.Stanley, William D.Danko'
 language: 'Anglais'
 year: '1996'

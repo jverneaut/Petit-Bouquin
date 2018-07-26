@@ -1,0 +1,47 @@
+.article {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 40px;
+  padding: 16px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 40px;
+    margin: 56px 0px;
+    line-height: 1.2;
+    font-family: system-ui;
+  }
+
+  ul {
+    margin-bottom: 24px;
+    list-style-type: circle;
+    padding-left: 40px;
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: 1px solid black;
+    padding-left: 24px;
+    margin-left: 32px;
+    margin: 40px 0;
+  }
+}

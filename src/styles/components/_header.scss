@@ -1,0 +1,53 @@
+.header {
+  height: 64px;
+
+  .brand {
+    margin-top: 32px;
+    margin-left: 56px;
+    position: fixed;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    z-index: 1;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border-radius: 32px;
+      background: white;
+      transition: 0.4s all;
+      padding-right: 64px;
+      margin-left: 16px;
+      &-img {
+        margin-left: -16px;
+        width: 32px;
+        height: 32px;
+        transition: 0.4s all;
+      }
+    }
+
+    &__name {
+      color: black;
+      font-size: 24px;
+      transition: 0.4s all;
+      margin-left: -54px;
+    }
+
+    &--mini {
+      .brand__name {
+        opacity: 0;
+        margin-left: -24px;
+      }
+
+      .brand__logo {
+        margin-left: 0;
+        padding-right: 16px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+        &-img {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

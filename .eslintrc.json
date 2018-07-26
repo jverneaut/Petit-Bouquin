@@ -1,14 +1,18 @@
 {
-    "extends": "airbnb",
-    "rules": {
-        "react/jsx-filename-extension": "off",
-        "jsx-a11y/anchor-is-valid": "off",
-        "no-console": "off",
-        "react/no-danger": "off"
-    },
-    "settings": {
-        "import/core-modules": [
-            "react"
-        ]
-    }
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": "off",
+    "react/no-danger": "off"
+  },
+  "settings": {
+    "import/core-modules": [
+      "react"
+    ]
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  }
 }

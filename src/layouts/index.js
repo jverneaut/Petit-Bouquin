@@ -7,7 +7,7 @@ import '../styles/main.scss';
 
 const Layout = ({ children }) => (
   <div>
-    <Header />
+    {/* <Header /> */}
     {children()}
   </div>
 );
