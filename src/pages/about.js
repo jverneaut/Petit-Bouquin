@@ -39,7 +39,7 @@ const About = () => (
     </p>
     <p>
       Vous souhaitez discuter ou travailler avec moi ?
-      Vous pouvez me contacter via <a href="https://fr.linkedin.com/in/julien-verneaut-6b56b8122">mon Linkedin</a>.
+      Vous pouvez me contacter via <a href="https://fr.linkedin.com/in/julien-verneaut">mon Linkedin</a>.
     </p>
   </div>
 );
